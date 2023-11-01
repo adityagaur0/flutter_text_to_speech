@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
                   controller: _textEditingController,
                 ),
                 ElevatedButton(
-                  onPressed: () => speak("hi"),
+                  onPressed: () => speak(_textEditingController.text),
                   child: Text("Start Text to Speech"),
                 ),
               ],
