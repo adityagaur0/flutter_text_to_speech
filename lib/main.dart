@@ -30,7 +30,9 @@ class MyHomePage extends StatelessWidget {
 
   speak(String text) async {
     await flutterTts.setLanguage("en-US");
-    await flutterTts.setPitch(1); // 0.5 to 1.5
+    await flutterTts.setPitch(1); // 0.5 to 1.5 // pitch of sound
+    await flutterTts.setVolume(1.0); //volume of speech
+    await flutterTts.setSpeechRate(0.5); //speed of speech
     await flutterTts.speak(text);
   }
 
