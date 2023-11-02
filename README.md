@@ -4,7 +4,7 @@
 
 <img src="https://github.com/adityagaur0/text_to_speech/assets/112656570/27d2d260-8c3c-4d3e-bf99-31a50b711a0d" width="300" height="600">
 
-## 2 How to run it:
+## How to run it:
 1. First, add flutter_tts to your project by adding the following lines in pubspec.yaml file:
    ```yaml
    dependencies:
