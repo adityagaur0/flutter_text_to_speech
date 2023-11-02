@@ -9,7 +9,7 @@
    ```dependencies:
     flutter:
       sdk: flutter
-    flutter_tts:```
+    flutter_tts:``
 2. Change the minimum Android sdk version to 21 (or higher) in your android/app/build.gradle file.
    To change it refer to Repo: 
 4. add **TextToSpeech.Engine.INTENT_ACTION_TTS_SERVICE** in the queries elements at AndroidManifest.xml file:
