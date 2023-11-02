@@ -66,11 +66,4 @@ class MyHomePage extends StatelessWidget {
       ),
     );
   }
-
-  @override
-  void dispose() {
-    flutterTts.stop(); // Stop any ongoing speech
-    //flutterTts.shutdown(); // Release FlutterTts resources
-    super.dispose();
-  }
 }
