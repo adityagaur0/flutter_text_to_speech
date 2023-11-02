@@ -6,12 +6,12 @@
 
 ## 2 How to run it:
 1. First, add flutter_tts to your project by adding the following lines in pubspec.yaml file:
-   ```
-dependencies:
+   ```\
+   dependencies:
     flutter:
       sdk: flutter
     flutter_tts:
-   ```
+
 2. Change the minimum Android sdk version to 21 (or higher) in your android/app/build.gradle file.
    To change it refer to Repo: 
 4. add **TextToSpeech.Engine.INTENT_ACTION_TTS_SERVICE** in the queries elements at AndroidManifest.xml file:
@@ -21,7 +21,6 @@ dependencies:
     <action android:name="android.intent.action.TTS_SERVICE" />
   </intent>
 </queries>
-   ```
 
 
    For example:
