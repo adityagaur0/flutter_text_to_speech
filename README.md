@@ -22,8 +22,8 @@
    </queries>`
 
 For example:
+<img src="https://github.com/adityagaur0/text_to_speech/assets/112656570/a422357d-1fde-457d-b638-41ae5b40ceba" width="300" height="600">
 
-     <img width="400" alt="Screenshot 2023-11-02 at 2 09 43 PM" src="https://github.com/adityagaur0/text_to_speech/assets/112656570/a422357d-1fde-457d-b638-41ae5b40ceba">
 
    
 
