@@ -19,10 +19,9 @@
       <intent>
        <action android:name="android.intent.action.TTS_SERVICE" />
       </intent>
-   </queries>
+   </queries>`
 
-
-   For example:
+For example:
      <img width="749" alt="Screenshot 2023-11-02 at 2 09 43 PM" src="https://github.com/adityagaur0/text_to_speech/assets/112656570/a422357d-1fde-457d-b638-41ae5b40ceba">
 
    
