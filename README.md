@@ -13,11 +13,11 @@
 2. Change the minimum Android sdk version to 21 (or higher) in your android/app/build.gradle file.
    To change it refer to Repo: 
 4. add **TextToSpeech.Engine.INTENT_ACTION_TTS_SERVICE** in the queries elements at AndroidManifest.xml file:
-   `<queries>
+   ```<queries>
     <intent>
     <action android:name="android.intent.action.TTS_SERVICE" />
     </intent>
-    </queries>`
+    </queries>
 
    For example:
      <img width="749" alt="Screenshot 2023-11-02 at 2 09 43 PM" src="https://github.com/adityagaur0/text_to_speech/assets/112656570/a422357d-1fde-457d-b638-41ae5b40ceba">
