@@ -26,9 +26,11 @@ For example:
 <img src="https://github.com/adityagaur0/text_to_speech/assets/112656570/a422357d-1fde-457d-b638-41ae5b40ceba" width="500">
 
 4. Import it:
+   
    `import 'package:flutter_tts/flutter_tts.dart';`
 
 5. Run main.dart
+   [Click Here]("https://github.com/adityagaur0/text_to_speech/blob/fc7fd0fc942c66143fd987a01d8a857fb18f813b/lib/main.dart")
    
 
 
