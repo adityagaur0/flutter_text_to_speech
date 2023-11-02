@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:text_to_speech/tts_service.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,16 +26,19 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
 
-  final FlutterTts flutterTts = FlutterTts();
+  // final FlutterTts flutterTts = FlutterTts();
+  final TTSService ttsService =
+      TTSService(); // Create an instance of TTSService
+
   final TextEditingController _textEditingController = TextEditingController();
 
-  speak(String text) async {
-    await flutterTts.setLanguage("en-US");
-    await flutterTts.setPitch(1); // 0.5 to 1.5 // pitch of sound
-    await flutterTts.setVolume(1.0); //volume of speech
-    await flutterTts.setSpeechRate(0.5); //speed of speech
-    await flutterTts.speak(text);
-  }
+  // speak(String text) async {
+  //   await flutterTts.setLanguage("en-US");
+  //   await flutterTts.setPitch(1); // 0.5 to 1.5 // pitch of sound
+  //   await flutterTts.setVolume(1.0); //volume of speech
+  //   await flutterTts.setSpeechRate(0.5); //speed of speech
+  //   await flutterTts.speak(text);
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +55,8 @@ class MyHomePage extends StatelessWidget {
                   controller: _textEditingController,
                 ),
                 ElevatedButton(
-                  onPressed: () => speak(_textEditingController.text),
+                  onPressed: () =>
+                      ttsService.speak(_textEditingController.text),
                   child: Text("Start Text to Speech"),
                 ),
               ],
@@ -60,5 +65,12 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    flutterTts.stop(); // Stop any ongoing speech
+    //flutterTts.shutdown(); // Release FlutterTts resources
+    super.dispose();
   }
 }
